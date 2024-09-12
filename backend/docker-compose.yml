@@ -1,0 +1,11 @@
+services:
+  compiler:
+    image: ritik240803/onlinejudge:v1.0.0
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    environment:
+      - MONGO_URL=${MONGO_URL}
+      - SUBMISSION_PORT=${SUBMISSION_PORT}

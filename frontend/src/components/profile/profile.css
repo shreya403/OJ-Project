@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #000428 0%, #004e92 50%, #6a00a8 100%);
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.profile-card {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  width: 400px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 5px solid #6a00a8;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+}
+
+.admin-dot {
+  width: 10px;
+  height: 10px;
+  background-color: limegreen;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.profile-email {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  color: #a9ffcb;
+}
+
+.profile-role {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #ffdf7e;
+}
+
+.heatmap-placeholder {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.heatmap-placeholder h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.color-empty {
+  fill: #ebedf0;
+}
+
+.color-github-1 {
+  fill: #c6e48b;
+}
+
+.color-github-2 {
+  fill: #7bc96f;
+}
+
+.color-github-3 {
+  fill: #239a3b;
+}
+
+.color-github-4 {
+  fill: #196127;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

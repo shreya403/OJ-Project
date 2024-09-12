@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.editor-container, .problem-details {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.editor-container {
+  max-width: 50%;
+}
+
+.problem-details {
+  max-width: 50%;
+}
+
+.outputbox {
+  margin-top: 20px;
+  background-color: #f7fafc;
+  padding: 10px;
+  border-radius: 5px;
+}
